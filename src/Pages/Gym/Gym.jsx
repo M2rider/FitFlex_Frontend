@@ -12,7 +12,7 @@ const Gym = () => {
     const fetchData =async () => {
         try {
             const gyms = await axios.get(
-                `http://localhost:8080/api/v2/center/gym`
+                `https://vihaan-fitflex.onrender.com/api/v2/center/gym`
             );
             setGymItems(gyms.data.reqCenters);
             // Update state with fetched data

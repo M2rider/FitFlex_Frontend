@@ -11,7 +11,7 @@ const Yoga = () => {
   const fetchData =async () => {
     try {
         const yoga = await axios.get(
-            `http://localhost:8080/api/v2/center/yoga`
+            `https://vihaan-fitflex.onrender.com/api/v2/center/yoga`
         );
         setYogaItems(yoga.data.reqCenters);
         // Update state with fetched data

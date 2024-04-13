@@ -27,7 +27,7 @@ function BusinessSignup() {
       console.log(name,email,location,category,password,description,motto);
       try {
           const res = await axios.post(
-              `http://localhost:8080/api/v2/auth/register`,
+              `https://vihaan-fitflex.onrender.com//api/v2/auth/register`,
               {name,email,location,category,password,description,motto}
           );
           if(res && res.data.success){

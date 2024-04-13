@@ -11,7 +11,7 @@ const Calisthenics = () => {
   const fetchData =async () => {
     try {
         const calisthenics = await axios.get(
-            `http://localhost:8080/api/v2/center/calisthenics`
+            `https://vihaan-fitflex.onrender.com/api/v2/center/calisthenics`
         );
         setCalisthenicsItems(calisthenics.data.reqCenters);
         // Update state with fetched data

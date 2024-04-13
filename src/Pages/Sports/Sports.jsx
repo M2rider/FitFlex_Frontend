@@ -11,7 +11,7 @@ const Sports = () => {
   const fetchData =async () => {
     try {
         const sports = await axios.get(
-            `http://localhost:8080/api/v2/center/sports`
+            `https://vihaan-fitflex.onrender.com/api/v2/center/sports`
         );
         setSportsItems(sports.data.reqCenters);
         // Update state with fetched data
